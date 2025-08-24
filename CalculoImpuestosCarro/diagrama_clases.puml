@@ -1,0 +1,42 @@
+@startuml
+package com.impuestos.model {
+  class Vehiculo {
+    - String marca
+    - String modelo
+    - int anioFabricacion
+    - int cilindraje
+    - double avaluo
+    - String tipoUso
+    + Vehiculo(String marca, String modelo, int anioFabricacion, int cilindraje, double avaluo, String tipoUso)
+    + int getAntiguedad(int anioActual)
+  }
+  class CalculadoraImpuestos {
+    + static double calcularImpuesto(Vehiculo v, int anioActual)
+  }
+}
+package com.impuestos.view {
+  class ImpuestoView {
+    + String getMarca()
+    + String getModelo()
+    + String getAnio()
+    + String getCilindraje()
+    + String getAvaluo()
+    + String getTipoUso()
+    + void setCalcularListener(ActionListener l)
+    + void setLimpiarListener(ActionListener l)
+    + void mostrarResultado(String texto)
+    + void mostrarError(String msg)
+    + void limpiar()
+  }
+}
+package com.impuestos.controller {
+  class ImpuestoController {
+    - ImpuestoView view
+    + ImpuestoController(ImpuestoView view)
+    - void calcular()
+  }
+}
+ImpuestoController --> ImpuestoView
+ImpuestoController --> Vehiculo
+ImpuestoController --> CalculadoraImpuestos
+@enduml
