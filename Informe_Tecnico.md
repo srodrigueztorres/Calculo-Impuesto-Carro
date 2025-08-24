@@ -1,4 +1,7 @@
 # Informe técnico - Cálculo de impuestos de un carro
+## Miembros del grupo
+- Luz Neidi Hinestroza Montaño - lhinest04060@universidadean.edu.co
+- Soed Alejandra Rodriguez Torres - srodrigu2893@universidadean.edu.co
 
 ## Resumen
 Se implementó una aplicación en Java que calcula una estimación del impuesto de un vehículo. 
@@ -54,16 +57,4 @@ ImpuestoController --> Vehiculo
 ImpuestoController --> CalculadoraImpuestos
 @enduml
 ```
-
-## Instrucciones para entrega en GitHub/GitLab
-1. Crear un repositorio nuevo (ejemplo: `calculo-impuestos-carro`).
-2. `git init` / `git add .` / `git commit -m "Versión inicial"`
-3. `git remote add origin <URL-del-repositorio>`
-4. `git push -u origin main`
-5. Compartir la dirección del repositorio con el tutor (ej.: `https://github.com/usuario/calculo-impuestos-carro`)
-
-## Miembros del grupo
-- Nombre 1 (Documento a completar)
-- Nombre 2 (Documento a completar)
-- Nombre 3 (Documento a completar)
 
